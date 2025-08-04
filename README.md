@@ -3,7 +3,7 @@
 Welcome to my personal portfolio repository!  
 This portfolio showcases my projects, skills, and journey as a Computer Engineering student and aspiring Data Scientist / Software Developer.
 
-🔗 **Live Portfolio:** [View Here]([https://your-portfolio-link.com](https://harshvardhansutar.netlify.app/))
+🔗 **Live Portfolio:** [View Here](https://harshvardhansutar.netlify.app/)
 
 ---
 
