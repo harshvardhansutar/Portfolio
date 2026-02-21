@@ -1594,3 +1594,105 @@ a:focus {
         padding: 0 5px;
     }
 }
+
+
+
+/* Modern Projects Section */
+
+.project-card{
+
+background:white;
+padding:30px;
+
+border-radius:12px;
+
+margin-bottom:30px;
+
+box-shadow:0px 10px 25px rgba(0,0,0,0.08);
+
+transition:0.3s;
+
+text-align:center;
+
+}
+
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0px 20px 40px rgba(0,0,0,0.15);
+
+}
+
+
+.project-icon{
+font-size:50px;
+color:#EF233C;
+margin-bottom:15px;
+}
+
+
+.project-card h3{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+}
+
+
+.project-card p{
+
+font-size:15px;
+
+margin-bottom:15px;
+
+}
+
+
+.tech span{
+
+display:inline-block;
+
+background:#f3f3f3;
+
+padding:6px 12px;
+
+margin:4px;
+
+border-radius:20px;
+
+font-size:13px;
+
+}
+
+
+.project-btn{
+
+display:inline-block;
+
+margin-top:10px;
+
+padding:10px 20px;
+
+background:#EF233C;
+
+color:white;
+
+border-radius:25px;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+
+.project-btn:hover{
+
+background:#c81d30;
+
+color:white;
+
+}
