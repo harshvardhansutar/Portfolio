@@ -505,40 +505,237 @@ a:focus {
     font-size: 16px;
 }
 
-.about .skills {
-    margin-bottom: 30px;
+/* About Highlights & Buttons */
+.about-highlights {
+    margin: 25px 0 20px;
 }
 
-.about .skill-name {
-    margin-top: 15px;
+.about-info-item {
+    background: #f8f9fa;
+    border-left: 3px solid #EF233C;
+    padding: 10px 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-.about .skill-name p {
-    display: inline-block;
-    margin-bottom: 5px;
+.about-info-item:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.about-info-item .info-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #888888;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.about-info-item .info-val {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #2b2d42;
+}
+
+.about-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.about-btn-group .btn {
+    margin-top: 0;
+}
+
+.btn.btn-outline {
+    background: transparent;
+    color: #EF233C;
+    border: 2px solid #EF233C;
+    box-shadow: none;
+}
+
+.btn.btn-outline:hover {
+    background: #EF233C;
+    color: #ffffff;
+}
+
+/*******************************/
+/******** Tech Stack CSS *******/
+/*******************************/
+.tech-stack {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 30px 0;
+    background: #ffffff;
+}
+
+.tech-subtitle {
     font-size: 16px;
+    color: #6c757d;
+    max-width: 620px;
+    margin: -30px auto 40px auto;
+    line-height: 1.6;
     font-weight: 400;
 }
 
-.about .skill-name p:last-child {
-    float: right;
+.tech-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 24px 26px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.about .progress {
-    height: 10px;
-    border-radius: 10px;
-    background: #dddddd;
+.tech-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: transparent;
+    transition: background 0.35s ease;
 }
 
-.about .progress .progress-bar {
-    width: 0px;
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(239, 35, 60, 0.3);
+    box-shadow: 0 16px 32px rgba(239, 35, 60, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.tech-card:hover::before {
     background: #EF233C;
-    border-radius: 10px;
-    transition: 2s;
 }
 
-.about .about-text a.btn {
-    margin-top: 15px;
+.tech-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed #e9ecef;
+}
+
+.tech-card-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+.tech-card-title h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #2b2d42;
+    letter-spacing: -0.2px;
+}
+
+.tech-cat-icon {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #fdf2f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.tech-badge {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #888888;
+    background: #f4f5f7;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.tech-items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 14px;
+    background: #f8f9fc;
+    border: 1px solid #edf0f5;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.tech-item:hover {
+    background: #ffffff;
+    border-color: #EF233C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tech-icon {
+    font-size: 22px;
+    line-height: 1;
+    min-width: 24px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Custom Icon Accent Colors */
+.sql-icon {
+    color: #00758F;
+}
+
+.yolo-icon {
+    color: #EF233C;
+}
+
+.obj-icon {
+    color: #2563EB;
+}
+
+.pose-icon {
+    color: #10B981;
+}
+
+.ws-icon {
+    color: #F59E0B;
+}
+
+@media (max-width: 767.98px) {
+    .tech-items-grid {
+        grid-template-columns: 1fr;
+    }
+    .tech-subtitle {
+        margin-bottom: 30px;
+        font-size: 15px;
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -725,86 +922,297 @@ a:focus {
 
 
 /*******************************/
-/********* Service CSS *********/
+/****** Featured Projects ******/
 /*******************************/
 .service {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.service .service-item {
-    position: relative;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.5s;
-}
-
-.service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
-}
-
-.service .service-icon {
-    position: relative;
-    width: 150px;
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #EF233C;
+    padding: 60px 0 30px 0;
     background: #ffffff;
 }
 
-.service .service-icon i {
-    position: relative;
-    font-size: 60px;
-    color: #EF233C;
-    transition: .3s;
-}
-
-.service .service-item:hover i {
-    font-size: 75px;
-}
-
-.service .service-text {
-    position: relative;
-    width: calc(100% - 120px);
-    padding: 0 30px;
-}
-
-.service .service-text h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 1s;
-}
-
-.service .service-text p {
-    margin: 0;
+.feat-section-subtitle {
     font-size: 16px;
-    transition: 1s;
+    color: #6c757d;
+    max-width: 650px;
+    margin: -30px auto 45px auto;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
-.service .service-item:hover .service-text h3,
-.service .service-item:hover .service-text p {
+.feat-project-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feat-project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(239, 35, 60, 0.3);
+    box-shadow: 0 16px 36px rgba(239, 35, 60, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Card Body */
+.feat-card-body {
+    padding: 26px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Badge */
+.feat-card-meta {
+    margin-bottom: 12px;
+}
+
+.feat-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #555555;
+    background: #f1f3f7;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.feat-badge-primary {
+    background: #fdf2f4;
+    color: #EF233C;
+    border: 1px solid rgba(239, 35, 60, 0.2);
+}
+
+/* Titles & Text */
+.feat-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2b2d42;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.3px;
+}
+
+.feat-subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #EF233C;
+    margin: 0 0 14px 0;
+    min-height: 22px;
+}
+
+.feat-desc {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: #555555;
+    margin-bottom: 18px;
+    flex-grow: 1;
+}
+
+/* Tech Tags */
+.feat-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+    min-height: 38px;
+}
+
+.feat-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333333;
+    background: #f8f9fc;
+    border: 1px solid #eef1f6;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+}
+
+.feat-tag:hover {
+    background: #ffffff;
+    border-color: #EF233C;
+    transform: translateY(-2px);
+}
+
+/* Action Buttons */
+.feat-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.feat-btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.feat-btn-primary {
+    background: #EF233C;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(239, 35, 60, 0.25);
+}
+
+.feat-btn-primary:hover {
+    background: #d90429;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(239, 35, 60, 0.35);
+}
+
+.feat-btn-outline {
+    background: transparent;
+    color: #2b2d42 !important;
+    border: 1px solid #d5d9e2;
+}
+
+.feat-btn-outline:hover {
+    border-color: #EF233C;
+    color: #EF233C !important;
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+.feat-btn-link {
+    color: #EF233C !important;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.feat-btn-link i {
+    transition: transform 0.2s ease;
+}
+
+.feat-btn-link:hover i {
+    transform: translateX(4px);
+}
+
+/* Card Visual & Images (Uniform across 2x2 grid) */
+.feat-card-visual {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #0f141c;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.feat-project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.feat-project-card:hover .feat-project-img {
+    transform: scale(1.05);
+}
+
+.feat-live-pill {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.3px;
 }
 
-.service .service-item:hover .service-text {
-    padding: 20px 30px; /* Add more vertical padding */
+.live-dot {
+    width: 8px;
+    height: 8px;
+    background: #10B981;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #10B981;
+    animation: livePulse 2s infinite;
 }
 
+@keyframes livePulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
 
-@media (max-width: 575.98px) {
-    .service .service-text h3 {
-        font-size: 16px;
-        margin-bottom: 5px;
+/* Archives Bottom CTA */
+.archives-cta-wrap {
+    margin-top: 50px;
+    padding: 35px 20px 20px;
+}
+
+.archives-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 38px;
+    background: #EF233C;
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(239, 35, 60, 0.3);
+    transition: all 0.35s ease;
+    text-decoration: none;
+}
+
+.archives-btn:hover {
+    background: #d90429;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(239, 35, 60, 0.4);
+}
+
+.archives-btn i {
+    transition: transform 0.25s ease;
+}
+
+.archives-btn:hover i {
+    transform: translateX(5px);
+}
+
+.archives-subtext {
+    font-size: 14.5px;
+    color: #6c757d;
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+@media (max-width: 767.98px) {
+    .feat-card-body {
+        padding: 20px;
     }
-    
-    .service .service-text p {
-        font-size: 14px;
+    .feat-title {
+        font-size: 22px;
+    }
+    .archives-btn {
+        padding: 14px 28px;
+        font-size: 14.5px;
     }
 }
 
